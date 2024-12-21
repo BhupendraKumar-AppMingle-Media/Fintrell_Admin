@@ -31,6 +31,7 @@ import Weaknesses from './pages/AllProjectReport/Weaknesses'
 import Assumptions from "./pages/AllCRMPAGES/Assumptions";
 import CostOfProject from "./pages/AllCRMPAGES/CostOfProject";
 import MeansOfFinance from "./pages/AllCRMPAGES/MeansOfFinance";
+import ProfitandLoss from "./pages/AllCRMPAGES/ProfitandLoss";
 
 
 
@@ -81,8 +82,8 @@ const App = () => {
           <Route path="/assumptions" element={<Assumptions />} />
           <Route path="/costofproject" element={<CostOfProject />} />
           <Route path="/meansoffinance" element={<MeansOfFinance />} />
-       {/*     // <Route path="/crm" element={<ProfitAndLoss />} />
-          // <Route path="/crm" element={<BalanceSheet/>} />
+          <Route path="/profit-loss" element={<ProfitandLoss />} />
+       {/*   // <Route path="/crm" element={<BalanceSheet/>} />
           // <Route path="/crm" element={<IndirectExpenses />} />
           // <Route path="/crm" element={<DER />} />
           // <Route path="/crm" element={<CF/>} />

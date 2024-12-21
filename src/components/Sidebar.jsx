@@ -1,4 +1,3 @@
-
 import { NavLink } from "react-router-dom";
 import { Logos } from "../assets/assets";
 import SupportSVG from "../assets/SupportSVG";
@@ -20,12 +19,13 @@ const Sidebar = () => {
   const toggleProjectDropdown = () =>
     setIsProjectDropdownOpen(!isProjectDropdownOpen);
   const toggleCrmDropdown = () => setIsCrmDropdownOpen(!isCrmDropdownOpen);
-
+// bg-[#f4f9fd]
   return (
-    <div className="h-full overflow-y-auto m-1 bg-[#f4f9fd] shadow-md flex flex-col justify-between rounded-2xl py-4 sticky top-2 
+    <div
+      className="h-full overflow-y-auto ml-4  bg-white shadow-md flex flex-col justify-between rounded-2xl py-4 sticky top-2 
     custom-scrollbar
-    ">
-  
+    "
+    >
       {/* Top Section */}
       <div className="my-5">
         {/* Logo */}
@@ -83,8 +83,6 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-               
-
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -98,8 +96,6 @@ const Sidebar = () => {
                     </li>
                   </div>
                 </div>
-
-               
 
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
@@ -115,8 +111,6 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-               
-
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -130,8 +124,6 @@ const Sidebar = () => {
                     </li>
                   </div>
                 </div>
-
-              
 
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
@@ -147,8 +139,6 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-               
-
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -162,8 +152,6 @@ const Sidebar = () => {
                     </li>
                   </div>
                 </div>
-
-               
 
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
@@ -179,8 +167,6 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-              
-
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -195,7 +181,6 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-             
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -209,8 +194,6 @@ const Sidebar = () => {
                     </li>
                   </div>
                 </div>
-
-              
 
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
@@ -226,8 +209,6 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-              
-
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -242,7 +223,6 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-               
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -257,7 +237,6 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -271,7 +250,6 @@ const Sidebar = () => {
                     </li>
                   </div>
                 </div>
-
               </ul>
             )}
           </li>
@@ -289,11 +267,7 @@ const Sidebar = () => {
             </div>
             {isCrmDropdownOpen && (
               <ul className="ml-8 mt-2 space-y-2 font-medium text-lg ">
-
-                
-              
-
-<div className="flex">
+                <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
                     <li>
@@ -307,12 +281,7 @@ const Sidebar = () => {
                   </div>
                 </div>
 
-
-
-
-              
-
-<div className="flex">
+                <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
                     <li>
@@ -320,204 +289,12 @@ const Sidebar = () => {
                         to="/costofproject"
                         className="text-gray-500 hover:text-blue-500 text-sm mr-2"
                       >
-                       Cost Of Project
+                        Cost Of Project
                       </NavLink>
                     </li>
                   </div>
                 </div>
 
-
-
-               
-
-
-                  <div className="flex">
-                  <div className="inline mr-2 ">▪</div>
-                  <div>
-                    <li>
-                      <NavLink
-                        to="/meansoffinance"
-                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
-                      >
-                         Means Of Finance
-                      </NavLink>
-                    </li>
-                  </div>
-                </div>
-
-
-
-
-                {/* <li>
-                  <NavLink
-                    to="/crm/page3"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    Profit and Loss
-                  </NavLink>
-                </li> */}
-
-                
-                 <div className="flex">
-                  <div className="inline mr-2 ">▪</div>
-                  <div>
-                    <li>
-                      <NavLink
-                        to="/meansoffinance"
-                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
-                      >
-                        Profit and Loss
-                      </NavLink>
-                    </li>
-                  </div>
-                </div>
-
-
-
-{/*                 
-                <li>
-                  <NavLink
-                    to="/crm/page4"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    Balance Sheet
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
-                  <div className="inline mr-2 ">▪</div>
-                  <div>
-                    <li>
-                      <NavLink
-                        to="/meansoffinance"
-                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
-                      >
-                         Balance Sheet
-                      </NavLink>
-                    </li>
-                  </div>
-                </div>
-
-
-
-
-{/* 
-                <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    Indirect Expenses
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
-                  <div className="inline mr-2 ">▪</div>
-                  <div>
-                    <li>
-                      <NavLink
-                        to="/meansoffinance"
-                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
-                      >
-                         Indirect Expenses
-                      </NavLink>
-                    </li>
-                  </div>
-                </div>
-
-
-
-                {/* <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    DEP
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
-                  <div className="inline mr-2 ">▪</div>
-                  <div>
-                    <li>
-                      <NavLink
-                        to="/meansoffinance"
-                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
-                      >
-                        DEP
-                      </NavLink>
-                    </li>
-                  </div>
-                </div>
-
-
-
-                {/* <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    Cash Flow
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
-                  <div className="inline mr-2 ">▪</div>
-                  <div>
-                    <li>
-                      <NavLink
-                        to="/meansoffinance"
-                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
-                      >
-                         Cash Flow
-                      </NavLink>
-                    </li>
-                  </div>
-                </div>
-
-
-{/* 
-                <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    DSCR
-                  </NavLink>
-
-
-                </li> */}
-
-                
-<div className="flex">
-                  <div className="inline mr-2 ">▪</div>
-                  <div>
-                    <li>
-                      <NavLink
-                        to="/meansoffinance"
-                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
-                      >
-                         DSCR
-                      </NavLink>
-                    </li>
-                  </div>
-                </div>
-
-
-
-                {/* <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    Financial Indicator
-                  </NavLink>
-                </li> */}
-                
                 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -526,170 +303,181 @@ const Sidebar = () => {
                         to="/meansoffinance"
                         className="text-gray-500 hover:text-blue-500 text-sm mr-2"
                       >
+                        Means Of Finance
+                      </NavLink>
+                    </li>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="inline mr-2 ">▪</div>
+                  <div>
+                    <li>
+                      <NavLink
+                        to="/profit-loss"
+                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
+                      >
+                        Profit and Loss
+                      </NavLink>
+                    </li>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="inline mr-2 ">▪</div>
+                  <div>
+                    <li>
+                      <NavLink
+                        to="/balance-sheet"
+                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
+                      >
+                        Balance Sheet
+                      </NavLink>
+                    </li>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="inline mr-2 ">▪</div>
+                  <div>
+                    <li>
+                      <NavLink
+                        to="/indirect-expenses"
+                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
+                      >
+                        Indirect Expenses
+                      </NavLink>
+                    </li>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="inline mr-2 ">▪</div>
+                  <div>
+                    <li>
+                      <NavLink
+                        to="/dep"
+                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
+                      >
+                        DEP
+                      </NavLink>
+                    </li>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="inline mr-2 ">▪</div>
+                  <div>
+                    <li>
+                      <NavLink
+                        to="/cash-flow"
+                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
+                      >
+                        Cash Flow
+                      </NavLink>
+                    </li>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="inline mr-2 ">▪</div>
+                  <div>
+                    <li>
+                      <NavLink
+                        to="/dscr"
+                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
+                      >
+                        DSCR
+                      </NavLink>
+                    </li>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="inline mr-2 ">▪</div>
+                  <div>
+                    <li>
+                      <NavLink
+                        to="/financial-indicator"
+                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
+                      >
                         Financial Indicator
                       </NavLink>
                     </li>
                   </div>
                 </div>
 
-
-
-
-                {/* <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    Current Ratio
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
+                <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
                     <li>
                       <NavLink
-                        to="/meansoffinance"
+                        to="/current-ratio"
                         className="text-gray-500 hover:text-blue-500 text-sm mr-2"
                       >
-                         Current Ratio
+                        Current Ratio
                       </NavLink>
                     </li>
                   </div>
                 </div>
 
-
-
-
-                {/* <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    Sensitivity Analytics
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
+                <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
                     <li>
                       <NavLink
-                        to="/meansoffinance"
+                        to="/sensitivity-analytics"
                         className="text-gray-500 hover:text-blue-500 text-sm mr-2"
                       >
-                         Sensitivity Analytics
+                        Sensitivity Analytics
                       </NavLink>
                     </li>
                   </div>
                 </div>
 
-
-
-                {/* <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    Break Even Point
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
+                <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
                     <li>
                       <NavLink
-                        to="/meansoffinance"
+                        to="/break-even-point"
                         className="text-gray-500 hover:text-blue-500 text-sm mr-2"
                       >
-                         Break Even Point
+                        Break Even Point
                       </NavLink>
                     </li>
                   </div>
                 </div>
 
-
-
-{/* 
-                <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    ROI & IRR
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
+                <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
                     <li>
                       <NavLink
-                        to="/meansoffinance"
+                        to="/roi-irr"
                         className="text-gray-500 hover:text-blue-500 text-sm mr-2"
                       >
-                         ROI & IRR
+                        ROI & IRR
                       </NavLink>
                     </li>
                   </div>
                 </div>
 
-
-
-                {/* <li>
-                  <NavLink
-                    to="/crm/page5"
-                    className="text-gray-500 hover:text-blue-500 text-sm"
-                  >
-                    EMI Sechedular
-                  </NavLink>
-                </li> */}
-
-                
-<div className="flex">
+                <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
                     <li>
                       <NavLink
-                        to="/meansoffinance"
+                        to="/emi-schedular"
                         className="text-gray-500 hover:text-blue-500 text-sm mr-2"
                       >
-                         EMI Sechedular
+                        EMI Sechedular
                       </NavLink>
                     </li>
                   </div>
                 </div>
 
-
-
-               
-
-                
-{/* <div className="flex">
-                  <div className="inline mr-2 ">▪</div>
-                  <div>
-                    <li>
-                      <NavLink
-                        to="/meansoffinance"
-                        className="text-gray-500 hover:text-blue-500 text-sm mr-2"
-                      >
-                        Preview
-                      </NavLink>
-                    </li>
-                  </div>
-                </div> */}
-
-
-
-               
-               
-
-{/*                 
+                {/*                 
 <div className="flex">
                   <div className="inline mr-2 ">▪</div>
                   <div>
@@ -703,9 +491,6 @@ const Sidebar = () => {
                     </li>
                   </div>
                 </div> */}
-
-
-
               </ul>
             )}
           </li>

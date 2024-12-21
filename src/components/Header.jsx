@@ -4,7 +4,7 @@ import StudentImg from "../assets/studentImg.png";
 
 const Header = () => {
   return (
-    <header className="p-4  bg-[#f4f9fd]">
+    <header className="p-4  fixed top-0 right-0 w-[80vw]    bg-[#f4f9fd]">
       <div className=" flex justify-between gap-5 w-full">
         <div className="">
           <p className="text-2xl font-semibold text-blue-800 mb-2">

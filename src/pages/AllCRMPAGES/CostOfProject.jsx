@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const CostOfProject = () => {
-  // Data structure for rows
   const initialRows = [
     { name: "Land & Plot", amount: 0, rate: 0 },
     { name: "Building & Construction", amount: 0, rate: 0 },
@@ -11,24 +10,21 @@ const CostOfProject = () => {
     { name: "Vehicles", amount: 0, rate: 0 },
     { name: "Equipment", amount: 0, rate: 0 },
     { name: "Other Assets", amount: 0, rate: 0 },
-    { name: "Working Capital", amount: 0 }, // No rate for "Working Capital"
+    { name: "Working Capital", amount: 0, rate: null }, // Set rate to null for Working Capital
   ];
 
   const [rows, setRows] = useState(initialRows);
   const [projectCost, setProjectCost] = useState(0);
 
-  // Handle input change
   const handleInputChange = (index, field, value) => {
     const updatedRows = [...rows];
-    updatedRows[index][field] = value === "" ? "" : parseFloat(value); // Allow empty field for validation
+    updatedRows[index][field] = value === "" ? "" : parseFloat(value);
     setRows(updatedRows);
 
-    // Recalculate project cost
     const total = updatedRows.reduce((sum, row) => sum + (row.amount || 0), 0);
     setProjectCost(total);
   };
 
-  // Handle form submission
   const handleSubmit = () => {
     const emptyFields = rows.some((row) => row.amount === "");
 
@@ -40,8 +36,8 @@ const CostOfProject = () => {
   };
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4"> Cost Of Project</h1>
+    <div className="p-6 ml-4">
+      <h1 className="text-2xl font-bold mb-4">Cost Of Project</h1>
       <div className="w-full">
         <div className="grid grid-cols-3 gap-4 font-semibold text-lg mb-2">
           <span></span>
@@ -63,7 +59,7 @@ const CostOfProject = () => {
               className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Enter amount"
             />
-            {row.rate !== null ? (
+            {row.name !== "Working Capital" ? (
               <div className="flex items-center">
                 <input
                   type="number"
@@ -77,7 +73,7 @@ const CostOfProject = () => {
                 <span className="ml-2 text-gray-600">%</span>
               </div>
             ) : (
-              <div className="text-gray-500 italic"></div>
+              <div></div> // Empty div for Working Capital row
             )}
           </div>
         ))}
@@ -86,12 +82,26 @@ const CostOfProject = () => {
         <p className="text-xl font-bold">
           <strong>Project Cost:</strong> ₹{projectCost}
         </p>
+
+
+
+<div className="flex justify-between items-center mt-4">
         <button
           onClick={handleSubmit}
           className="mt-4 px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
         >
           Submit
         </button>
+        <button
+          onClick={handleSubmit}
+          className="mt-4 px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+          Next
+        </button>
+
+        </div>
+
+
       </div>
     </div>
   );
