@@ -32,6 +32,7 @@ import Assumptions from "./pages/AllCRMPAGES/Assumptions";
 import CostOfProject from "./pages/AllCRMPAGES/CostOfProject";
 import MeansOfFinance from "./pages/AllCRMPAGES/MeansOfFinance";
 import ProfitandLoss from "./pages/AllCRMPAGES/ProfitandLoss";
+import BalanceSheet from "./pages/AllCRMPAGES/BalanceSheet";
 
 
 
@@ -83,8 +84,8 @@ const App = () => {
           <Route path="/costofproject" element={<CostOfProject />} />
           <Route path="/meansoffinance" element={<MeansOfFinance />} />
           <Route path="/profit-loss" element={<ProfitandLoss />} />
-       {/*   // <Route path="/crm" element={<BalanceSheet/>} />
-          // <Route path="/crm" element={<IndirectExpenses />} />
+          <Route path="/balance-sheet" element={<BalanceSheet/>} />
+        {/*   // <Route path="/crm" element={<IndirectExpenses />} />
           // <Route path="/crm" element={<DER />} />
           // <Route path="/crm" element={<CF/>} />
           // <Route path="/crm" element={<DSCR/>} />
